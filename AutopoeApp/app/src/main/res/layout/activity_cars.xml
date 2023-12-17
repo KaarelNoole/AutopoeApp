@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_login_gradients"
+    android:fillViewport="true"
+    tools:context=".CarsActivity">
+
+
+    <ScrollView
+        android:id="@+id/Scrollview"
+        android:layout_width="412dp"
+        android:layout_height="0dp"
+        android:scrollbarStyle="insideInset"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/txtHonda"
+                android:layout_width="0dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="75dp"
+                android:paddingLeft="50dp"
+                android:text="@string/Description"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/description2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/description2"
+                app:layout_constraintTop_toBottomOf="@+id/Description" />
+
+            <TextView
+                android:id="@+id/description3"
+                android:layout_width="match_parent"
+                android:layout_height="153dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/bluerectangle"
+                android:paddingLeft="50dp"
+                android:text="@string/Mudel2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description2" />
+
+            <TextView
+                android:id="@+id/txMercedes"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_marginBottom="88dp"
+                android:paddingLeft="50dp"
+                android:text="@string/Description2"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/description4"
+                app:layout_constraintEnd_toEndOf="@id/description3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/description2" />
+
+            <TextView
+                android:id="@+id/Description"
+                android:layout_width="364dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:paddingLeft="50dp"
+                android:text="@string/PickModel"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/car1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="64dp"
+                android:clickable="true"
+                android:contentDescription="@string/pluss"
+                android:onClick="onOpen"
+                app:backgroundTint="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtHonda"
+                app:srcCompat="@drawable/download" />
+
+            <TextView
+        android:id="@+id/description4"
+        android:layout_width="0dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/greyrectangle"
+        android:paddingLeft="42dp"
+        android:text="@string/Mudel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description3" />
+
+            <TextView
+                android:id="@+id/description2"
+                android:layout_width="match_parent"
+                android:layout_height="153dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:autoText="false"
+                android:background="@drawable/blackrectangle"
+                android:freezesText="false"
+                android:hapticFeedbackEnabled="false"
+                android:paddingLeft="50dp"
+                android:text="@string/Mudel1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textIsSelectable="false"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Description" />
+
+    <TextView
+        android:id="@+id/txAudi"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="88dp"
+        android:paddingLeft="50dp"
+        android:text="@string/Description1"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/description3"
+        app:layout_constraintEnd_toEndOf="@+id/description2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/description2" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/car2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="64dp"
+                android:clickable="true"
+                android:contentDescription="@string/pluss"
+                android:onClick="onOpen1"
+                app:backgroundTint="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txAudi"
+                app:srcCompat="@drawable/download" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/car3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="64dp"
+                android:clickable="true"
+                android:contentDescription="@string/pluss"
+                android:onClick="onOpen2"
+                app:backgroundTint="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/description4"
+                app:layout_constraintTop_toBottomOf="@+id/txMercedes"
+                app:srcCompat="@drawable/download" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
